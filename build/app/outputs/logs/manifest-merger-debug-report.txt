@@ -1,0 +1,395 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+MERGED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+MERGED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:google_api_availability] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-21:12
+MERGED from [:google_maps_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:geocoder] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences_web] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences_macos] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_macos\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:webview_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:location_permissions] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1e91a87c97603844f6df21a101374f9b\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-vision-common:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\838e55324911c34a7d0ab9b7f2884124\play-services-vision-common-19.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2addc0ee551877f95c44d325221e3ead\play-services-clearcut-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\baeb275dd6fbbdfb1d56bb2ca75650ed\play-services-flags-17.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0728163edc18a6c84376b8f88e2191c1\play-services-phenotype-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.yalantis:ucrop:2.2.5] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\4634ad0e8ecb0b8d5ddcba85d3499d25\ucrop-2.2.5\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\7def8d6c3751559765cf68c2d5a2dddd\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\09be4c98f955b63e9a8cadeb6d33d870\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\32e01e3a0b7905dca7a358a9820047fe\play-services-tasks-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\e6b1c804849fbf3a96135de6255bcce0\webkit-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1681add2c5f7781230c3b0d90cc57ad9\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0f0610cdcf96e6cfa9529b6a3246e3f6\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\e1bbce6b0d79e8479b70e7bd729bb743\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\60c890b7febb99854cab301d6a2a855b\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5bfbe01745d2a29d4e7cd137b17143f4\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0-rc01] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0d0364dd4dfbe053812679d71e9451b7\transition-1.2.0-rc01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2410fdb7000841f3d1c8c67029d91e2f\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b1c3739a180dfdcda5d6182680201b94\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b6252bb7f30c7dceb20e97dfa6dfae00\core-1.2.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\54d8b8735f730e83f07925f758092af3\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\23edc849475fdda61367cb003f9b9f93\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\79f9d65ef8b1c716310f666473a689a7\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\077300052aa327ee6fc9bbb0ce309b24\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\fefdd83516e8eeb5097956f9d9af4b04\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\a722f7742f3f6d8bbfd4822beeefff87\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\3a91f7da3dec1c0af81d445d3edd52b1\exifinterface-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\35bca835e72502cae5588ee7a59cf4b0\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\bce9999f881bb3993a5b24e08740cbbf\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b1132090a8a1ffc60b82d3452ca52ad\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2ca8bc49d3a28fb6fa3bddf429b143ba\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2b16ac6c4193835014f293427ee35afa\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:2:5-42
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:8:5-34:19
+MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-19:19
+MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-19:19
+MERGED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-20:19
+MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1e91a87c97603844f6df21a101374f9b\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1e91a87c97603844f6df21a101374f9b\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-vision-common:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\838e55324911c34a7d0ab9b7f2884124\play-services-vision-common-19.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\838e55324911c34a7d0ab9b7f2884124\play-services-vision-common-19.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2addc0ee551877f95c44d325221e3ead\play-services-clearcut-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2addc0ee551877f95c44d325221e3ead\play-services-clearcut-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0728163edc18a6c84376b8f88e2191c1\play-services-phenotype-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0728163edc18a6c84376b8f88e2191c1\play-services-phenotype-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\32e01e3a0b7905dca7a358a9820047fe\play-services-tasks-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\32e01e3a0b7905dca7a358a9820047fe\play-services-tasks-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b6252bb7f30c7dceb20e97dfa6dfae00\core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b6252bb7f30c7dceb20e97dfa6dfae00\core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b6252bb7f30c7dceb20e97dfa6dfae00\core-1.2.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:10:9-39
+	android:largeHeap
+		ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-33
+	android:icon
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:11:9-43
+	android:theme
+		ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-59
+	android:usesCleartextTraffic
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:9:9-57
+activity#com.shababit.budget_tracker.MainActivity
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:13:9-24:20
+	android:launchMode
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:15:13-43
+	android:hardwareAccelerated
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:18:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:19:13-55
+	android:configChanges
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:17:13-163
+	android:theme
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:16:13-47
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:14:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:21:17-68
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:22:17-76
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:22:27-74
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:25:9-28:63
+	android:screenOrientation
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:27:5-41
+	android:theme
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:28:5-61
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:26:5-52
+meta-data#flutterEmbedding
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:31:9-33:33
+	android:value
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:33:13-30
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:32:13-44
+uses-sdk
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
+MERGED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_api_availability] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_api_availability] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geocoder] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geocoder] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_web] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_web] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_macos] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_macos\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_macos] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_macos\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:location_permissions] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:location_permissions] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1e91a87c97603844f6df21a101374f9b\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1e91a87c97603844f6df21a101374f9b\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\838e55324911c34a7d0ab9b7f2884124\play-services-vision-common-19.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\838e55324911c34a7d0ab9b7f2884124\play-services-vision-common-19.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2addc0ee551877f95c44d325221e3ead\play-services-clearcut-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2addc0ee551877f95c44d325221e3ead\play-services-clearcut-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\baeb275dd6fbbdfb1d56bb2ca75650ed\play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\baeb275dd6fbbdfb1d56bb2ca75650ed\play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0728163edc18a6c84376b8f88e2191c1\play-services-phenotype-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0728163edc18a6c84376b8f88e2191c1\play-services-phenotype-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.yalantis:ucrop:2.2.5] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\4634ad0e8ecb0b8d5ddcba85d3499d25\ucrop-2.2.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.5] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\4634ad0e8ecb0b8d5ddcba85d3499d25\ucrop-2.2.5\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\7def8d6c3751559765cf68c2d5a2dddd\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\7def8d6c3751559765cf68c2d5a2dddd\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\09be4c98f955b63e9a8cadeb6d33d870\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\09be4c98f955b63e9a8cadeb6d33d870\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\32e01e3a0b7905dca7a358a9820047fe\play-services-tasks-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\32e01e3a0b7905dca7a358a9820047fe\play-services-tasks-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\e6b1c804849fbf3a96135de6255bcce0\webkit-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\e6b1c804849fbf3a96135de6255bcce0\webkit-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1681add2c5f7781230c3b0d90cc57ad9\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1681add2c5f7781230c3b0d90cc57ad9\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0f0610cdcf96e6cfa9529b6a3246e3f6\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0f0610cdcf96e6cfa9529b6a3246e3f6\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\e1bbce6b0d79e8479b70e7bd729bb743\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\e1bbce6b0d79e8479b70e7bd729bb743\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\60c890b7febb99854cab301d6a2a855b\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\60c890b7febb99854cab301d6a2a855b\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5bfbe01745d2a29d4e7cd137b17143f4\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5bfbe01745d2a29d4e7cd137b17143f4\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0-rc01] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0d0364dd4dfbe053812679d71e9451b7\transition-1.2.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0-rc01] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\0d0364dd4dfbe053812679d71e9451b7\transition-1.2.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2410fdb7000841f3d1c8c67029d91e2f\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2410fdb7000841f3d1c8c67029d91e2f\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b1c3739a180dfdcda5d6182680201b94\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b1c3739a180dfdcda5d6182680201b94\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b6252bb7f30c7dceb20e97dfa6dfae00\core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b6252bb7f30c7dceb20e97dfa6dfae00\core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\54d8b8735f730e83f07925f758092af3\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\54d8b8735f730e83f07925f758092af3\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\23edc849475fdda61367cb003f9b9f93\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\23edc849475fdda61367cb003f9b9f93\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\79f9d65ef8b1c716310f666473a689a7\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\79f9d65ef8b1c716310f666473a689a7\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\077300052aa327ee6fc9bbb0ce309b24\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\077300052aa327ee6fc9bbb0ce309b24\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\fefdd83516e8eeb5097956f9d9af4b04\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\fefdd83516e8eeb5097956f9d9af4b04\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\a722f7742f3f6d8bbfd4822beeefff87\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\a722f7742f3f6d8bbfd4822beeefff87\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\3a91f7da3dec1c0af81d445d3edd52b1\exifinterface-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\3a91f7da3dec1c0af81d445d3edd52b1\exifinterface-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\35bca835e72502cae5588ee7a59cf4b0\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\35bca835e72502cae5588ee7a59cf4b0\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\bce9999f881bb3993a5b24e08740cbbf\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\bce9999f881bb3993a5b24e08740cbbf\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b1132090a8a1ffc60b82d3452ca52ad\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b1132090a8a1ffc60b82d3452ca52ad\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2ca8bc49d3a28fb6fa3bddf429b143ba\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2ca8bc49d3a28fb6fa3bddf429b143ba\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2b16ac6c4193835014f293427ee35afa\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\2b16ac6c4193835014f293427ee35afa\multidex-2.0.0\AndroidManifest.xml:20:5-43
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml:6:5-66
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.CAMERA
+ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-62
+uses-feature#android.hardware.camera
+ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-60
+	android:name
+		ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:11:19-57
+uses-permission#android.permission.FLASHLIGHT
+ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-69
+	android:name
+		ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-66
+activity#com.amolg.flutterbarcodescanner.BarcodeCaptureActivity
+ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-91
+	android:name
+		ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:18:19-88
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+	android:grantUriPermissions
+		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+	android:authorities
+		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+	android:exported
+		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+	android:resource
+		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+	android:name
+		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
