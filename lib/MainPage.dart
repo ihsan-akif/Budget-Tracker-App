@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:budget_tracker/AdminPage.dart';
 import 'package:budget_tracker/ConsultancyServicePage.dart';
 import 'package:budget_tracker/DashboardPage.dart';
 import 'package:budget_tracker/CartPage.dart';
@@ -43,6 +44,7 @@ class _MainPageState extends State<MainPage> {
   String _title;
   String server = "http://shabab-it.com/budget_tracker";
   String cartQuantity = "0";
+  bool _isadmin = false;
 
   @override
   void initState() {
@@ -51,6 +53,9 @@ class _MainPageState extends State<MainPage> {
     _loadCartQuantity();
     _title = "Dashboard";
     cartQuantity = widget.user.quantity;
+    if (widget.user.email == "admin@budgettracker.com") {
+      _isadmin = true;
+    }
   }
 
   @override
@@ -216,7 +221,7 @@ class _MainPageState extends State<MainPage> {
             builder: (BuildContext context) => EbookPage(
                   user: widget.user,
                 ));
-      case "Ebook Cart Page":
+      case "Cart Page":
         return MaterialPageRoute(
             builder: (BuildContext context) => CartPage(
                   user: widget.user,
@@ -336,6 +341,27 @@ class _MainPageState extends State<MainPage> {
                             user: widget.user,
                           )));
             },
+          ),
+          Visibility(
+            visible: _isadmin,
+            child: Column(
+              children: <Widget>[
+                ListTile(
+                    title: Text(
+                      "Admin Menu",
+                    ),
+                    leading: Icon(MdiIcons.crown),
+                    onTap: () => {
+                          Navigator.pop(context),
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) => AdminPage(
+                                        user: widget.user,
+                                      )))
+                        }),
+              ],
+            ),
           ),
           ListTile(
               title: Text(

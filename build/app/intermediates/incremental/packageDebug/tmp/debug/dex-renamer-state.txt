@@ -1,1 +1,4 @@
-#Sat Jul 11 10:11:52 SGT 2020
+#Wed Jul 15 00:07:20 SGT 2020
+base.0=C\:\\Users\\ihsan\\Documents\\Flutter Projects\\budget_tracker\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

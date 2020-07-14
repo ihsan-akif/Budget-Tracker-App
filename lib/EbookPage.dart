@@ -1,8 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:budget_tracker/CartPage.dart';
-import 'package:budget_tracker/PaymentHistoryPage.dart';
-import 'package:budget_tracker/SplashPage.dart';
 import 'package:budget_tracker/User.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -106,8 +103,8 @@ class _EbookPageState extends State<EbookPage> {
                                                 child: ClipRRect(
                                                   child: CachedNetworkImage(
                                                     fit: BoxFit.fill,
-                                                    imageUrl:
-                                                        "http://shabab-it.com/budget_tracker/catalogue_images/${ebookData[index]['prodid']}.jpg",
+                                                    imageUrl: server +
+                                                        "/catalogue_images/${ebookData[index]['prodid']}.jpg",
                                                     placeholder: (context,
                                                             url) =>
                                                         new CircularProgressIndicator(),
@@ -131,7 +128,7 @@ class _EbookPageState extends State<EbookPage> {
                                                   ebookData[index]['name'],
                                                   maxLines: 2,
                                                   style: TextStyle(
-                                                    fontSize: 16.0,
+                                                    fontSize: 14.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),
                                                 ),
@@ -199,39 +196,14 @@ class _EbookPageState extends State<EbookPage> {
                                           ],
                                         ),
                                       ));
-                                }return Container();
+                                }
+                                return Container();
                               },
                             ))
                     ],
                   ),
                 ],
               ),
-              // floatingActionButton: FloatingActionButton.extended(
-              //   backgroundColor: secondaryColor,
-              //   onPressed: () async {
-              //     if (widget.user.quantity == "0") {
-              //       Toast.show("Cart empty", context,
-              //           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-              //       return;
-              //     }
-              //     await Navigator.push(
-              //         context,
-              //         MaterialPageRoute(
-              //             builder: (BuildContext context) => EbookCartPage(
-              //                   user: widget.user,
-              //                 )));
-              //     _loadEbook();
-              //     _loadCartQuantity();
-              //   },
-              //   icon: Icon(
-              //     MdiIcons.cart,
-              //     color: Colors.black,
-              //   ),
-              //   label: Text(
-              //     cartQuantity,
-              //     style: TextStyle(color: Colors.black),
-              //   ),
-              // ),
             )));
   }
 
@@ -262,7 +234,7 @@ class _EbookPageState extends State<EbookPage> {
 
   void _loadEbook() async {
     String urlLoadEbook =
-        "http://shabab-it.com/budget_tracker/php/load_catalogue.php";
+        server + "/php/load_catalogue.php";
     await http.post(urlLoadEbook, body: {}).then((res) {
       if (res.body == "Catalogue Empty") {
         cartQuantity = "0";
@@ -307,7 +279,7 @@ class _EbookPageState extends State<EbookPage> {
                         image: DecorationImage(
                             fit: BoxFit.scaleDown,
                             image: NetworkImage(
-                                "http://shabab-it.com/budget_tracker/catalogue_images/${ebookData[index]['prodid']}.jpg"))),
+                                server + "/catalogue_images/${ebookData[index]['prodid']}.jpg"))),
                   )
                 ],
               ),
@@ -513,37 +485,37 @@ class _EbookPageState extends State<EbookPage> {
       print(ebookData[index]["prodid"]);
       print(widget.user.email);
       if (cquantity > 0) {
-      ProgressDialog pr = new ProgressDialog(context,
-          type: ProgressDialogType.Normal, isDismissible: true);
-      pr.style(message: "Add to cart...");
-      pr.show();
-      String urlLoadJobs = server + "/php/insert_ebooktocart.php";
-      http.post(urlLoadJobs, body: {
-        "email": widget.user.email,
-        "proisbn": ebookData[index]["prodid"],
-        "quantity": quantity.toString(),
-      }).then((res) {
-        print(res.body);
-        if (res.body == "failed") {
-          Toast.show("Failed add to cart", context,
-              duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+        ProgressDialog pr = new ProgressDialog(context,
+            type: ProgressDialogType.Normal, isDismissible: true);
+        pr.style(message: "Add to cart...");
+        pr.show();
+        String urlLoadJobs = server + "/php/insert_ebooktocart.php";
+        http.post(urlLoadJobs, body: {
+          "email": widget.user.email,
+          "proisbn": ebookData[index]["prodid"],
+          "quantity": quantity.toString(),
+        }).then((res) {
+          print(res.body);
+          if (res.body == "failed") {
+            Toast.show("Failed add to cart", context,
+                duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+            pr.hide();
+            return;
+          } else {
+            List respond = res.body.split(",");
+            setState(() {
+              cartQuantity = respond[1];
+              widget.user.quantity = cartQuantity;
+            });
+            Toast.show("Success add to cart", context,
+                duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+          }
           pr.hide();
-          return;
-        } else {
-          List respond = res.body.split(",");
-          setState(() {
-            cartQuantity = respond[1];
-            widget.user.quantity = cartQuantity;
-          });
-          Toast.show("Success add to cart", context,
-              duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-        }
+        }).catchError((err) {
+          print(err);
+          pr.hide();
+        });
         pr.hide();
-      }).catchError((err) {
-        print(err);
-        pr.hide();
-      });
-      pr.hide();
       } else {
         Toast.show("Out of stock", context,
             duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);

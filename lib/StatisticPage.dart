@@ -83,7 +83,7 @@ class _StatisticPageState extends State<StatisticPage> {
                               child: charts.PieChart(
                             _seriesPieData,
                             animate: true,
-                            animationDuration: Duration(seconds: 5),
+                            animationDuration: Duration(seconds: 3),
                             behaviors: [
                               new charts.DatumLegend(
                                   outsideJustification:

@@ -3,8 +3,6 @@ import 'dart:convert';
 import 'package:budget_tracker/AddExpensePage.dart';
 import 'package:budget_tracker/AddIncomePage.dart';
 import 'package:budget_tracker/Data.dart';
-import 'package:budget_tracker/PaymentHistoryPage.dart';
-import 'package:budget_tracker/SplashPage.dart';
 import 'package:budget_tracker/UpdateDataPage.dart';
 import 'package:flutter/material.dart';
 import 'package:budget_tracker/User.dart';
@@ -755,14 +753,15 @@ class _DashboardPageState extends State<DashboardPage> {
   }
 
   void _deleteDataDialog(int index) {
-    for (int i = 0; i > userData.length; i++) {
-      if (userData[i]['type'] == "Income") {
-        print(i);
-        Toast.show("Cannot delete first income!", context,
-            duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-        return;
-      }
-    }
+    // if (userData[index]['type'] == "Income") {
+    //   if (double.parse(userData[index]['total']) > totalExpense) {
+    //     Toast.show("Cannot delete this income!", context,
+    //         duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+    //     return;
+    //   }
+    // }
+
+    print(double.parse(userData[index]['total']));
 
     showDialog(
       context: context,

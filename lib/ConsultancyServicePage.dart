@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:budget_tracker/Consultant.dart';
+import 'package:budget_tracker/ConsultantDetail.dart';
 import 'package:budget_tracker/User.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -85,9 +87,11 @@ class _ConsultancyServicePageState extends State<ConsultancyServicePage> {
                                         elevation: 10,
                                         child: Padding(
                                           padding: EdgeInsets.all(5),
-                                          child: Column(
+                                          child: Row(
                                             mainAxisAlignment:
-                                                MainAxisAlignment.center,
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               GestureDetector(
                                                 onTap: () =>
@@ -95,8 +99,7 @@ class _ConsultancyServicePageState extends State<ConsultancyServicePage> {
                                                 child: Container(
                                                   height: screenHeight / 5.9,
                                                   width: screenWidth / 3.5,
-                                                  child: ClipOval(
-                                                      child: CachedNetworkImage(
+                                                  child: CachedNetworkImage(
                                                     fit: BoxFit.fill,
                                                     imageUrl: server +
                                                         "/catalogue_images/${consultantData[index]['prodid']}.jpg",
@@ -106,62 +109,84 @@ class _ConsultancyServicePageState extends State<ConsultancyServicePage> {
                                                     errorWidget: (context, url,
                                                             error) =>
                                                         new Icon(Icons.error),
-                                                  )),
+                                                  ),
                                                 ),
                                               ),
                                               SizedBox(
-                                                height: 10,
+                                                width: 20,
                                               ),
-                                              Text(
-                                                  consultantData[index]['name'],
-                                                  maxLines: 1,
-                                                  style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                  )),
-                                              Text(
-                                                "State:" +
-                                                    consultantData[index]
-                                                        ['state'],
-                                                style: TextStyle(
-                                                    fontWeight:
-                                                        FontWeight.bold),
-                                              ),
-                                              Text(
-                                                "RM " +
-                                                    consultantData[index]
-                                                        ['price'],
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.all(8.0),
+                                                child: Column(
+                                                  // mainAxisAlignment:
+                                                  //     MainAxisAlignment.spaceBetween,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: <Widget>[
+                                                    Text(
+                                                        consultantData[index]
+                                                            ['name'],
+                                                        maxLines: 1,
+                                                        style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        )),
+                                                    Text(
+                                                      "State:" +
+                                                          consultantData[index]
+                                                              ['state'],
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.bold),
+                                                    ),
+                                                    Text(
+                                                      "RM " +
+                                                          consultantData[index]
+                                                              ['price'] +
+                                                          " per ticket",
+                                                      style: TextStyle(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "Ticket available: " +
+                                                          consultantData[index]
+                                                              ['quantity'],
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.bold),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets
+                                                              .fromLTRB(
+                                                          50, 10, 0, 10),
+                                                      child: MaterialButton(
+                                                        shape: RoundedRectangleBorder(
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .horizontal()),
+                                                        minWidth: 100,
+                                                        height: 30,
+                                                        child: Text(
+                                                          'Click to see Detail',
+                                                        ),
+                                                        color: secondaryColor,
+                                                        textColor: Colors.black,
+                                                        elevation: 10,
+                                                        onPressed: () =>
+                                                            _getDetail(index),
+                                                      ),
+                                                    )
+                                                  ],
                                                 ),
-                                              ),
-                                              Text(
-                                                "Ticket available: " +
-                                                    consultantData[index]
-                                                        ['quantity'],
-                                                style: TextStyle(
-                                                    fontWeight:
-                                                        FontWeight.bold),
-                                              ),
-                                              MaterialButton(
-                                                shape: RoundedRectangleBorder(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            20.0)),
-                                                minWidth: 100,
-                                                height: 30,
-                                                child: Text(
-                                                  'Add to Cart',
-                                                ),
-                                                color: primaryColor,
-                                                textColor: Colors.black,
-                                                elevation: 10,
-                                                onPressed: () =>
-                                                    _addToCartDialog(index),
-                                              ),
+                                              )
                                             ],
                                           ),
                                         )));
-                              }return Container();
+                              }
+                              return Container();
                             }))
               ],
             )
@@ -249,185 +274,6 @@ class _ConsultancyServicePageState extends State<ConsultancyServicePage> {
     );
   }
 
-  _addToCartDialog(int index) {
-    if (widget.user.email == "guest@budgettracker.com") {
-      Toast.show("Please register to use this function", context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-      return;
-    }
-    // if (widget.user.email == "admin@grocery.com") {
-    //   Toast.show("Admin Mode!!!", context,
-    //       duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-    //   return;
-    // }
-    quantity = 1;
-    showDialog(
-        context: context,
-        builder: (context) {
-          return StatefulBuilder(builder: (context, newSetState) {
-            return AlertDialog(
-              backgroundColor: backgroundColor,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(20.0))),
-              title: new Text(
-                "Add " + consultantData[index]['name'] + " ticket to Cart?",
-                style: TextStyle(
-                    //color: Colors.white,
-                    ),
-              ),
-              content: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  Text(
-                    "Select the quantity of the ticket",
-                    style: TextStyle(
-                        //color: Colors.white,
-                        ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          FlatButton(
-                            onPressed: () => {
-                              newSetState(() {
-                                if (quantity > 1) {
-                                  quantity--;
-                                }
-                              })
-                            },
-                            child: Icon(
-                              MdiIcons.minus,
-                              color: Colors.black,
-                            ),
-                          ),
-                          Text(
-                            quantity.toString(),
-                            style: TextStyle(
-                                //color: Colors.white,
-                                ),
-                          ),
-                          FlatButton(
-                            onPressed: () => {
-                              newSetState(() {
-                                
-                                if (quantity <
-                                    (int.parse(
-                                            consultantData[index]['quantity']) -
-                                        2)) {
-                                  quantity++;
-                                } else {
-                                  Toast.show("Quantity not available", context,
-                                      duration: Toast.LENGTH_LONG,
-                                      gravity: Toast.BOTTOM);
-                                }
-                              })
-                            },
-                            child: Icon(
-                              MdiIcons.plus,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  )
-                ],
-              ),
-              actions: <Widget>[
-                MaterialButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    color: secondaryColor,
-                    onPressed: () {
-                      Navigator.of(context).pop(false);
-                      _addtoCart(index);
-                    },
-                    child: Text(
-                      "Yes",
-                      style: TextStyle(
-                        color: Colors.black,
-                      ),
-                    )),
-                MaterialButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    color: secondaryColor,
-                    onPressed: () {
-                      Navigator.of(context).pop(false);
-                    },
-                    child: Text(
-                      "Cancel",
-                      style: TextStyle(
-                        color: Colors.black,
-                      ),
-                    )),
-              ],
-            );
-          });
-        });
-  }
-
-  void _addtoCart(int index) {
-    if (widget.user.email == "guest@budgettracker.com") {
-      Toast.show("Please register to use this function", context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-      return;
-    }
-    // if (widget.user.email == "admin@grocery.com") {
-    //   Toast.show("Admin mode", context,
-    //       duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-    //   return;
-    // }
-    try {
-      int cquantity = int.parse(consultantData[index]["quantity"]);
-      print(cquantity);
-      print(consultantData[index]["prodid"]);
-      print(widget.user.email);
-      if (cquantity > 0) {
-        ProgressDialog pr = new ProgressDialog(context,
-            type: ProgressDialogType.Normal, isDismissible: true);
-        pr.style(message: "Add to cart...");
-        pr.show();
-        String urlLoadJobs = server + "/php/insert_consultanttocart.php";
-        http.post(urlLoadJobs, body: {
-          "email": widget.user.email,
-          "proid": consultantData[index]["prodid"],
-          "quantity": quantity.toString(),
-        }).then((res) {
-          print(res.body);
-          if (res.body == "failed") {
-            Toast.show("Failed add to cart", context,
-                duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-            pr.hide();
-            return;
-          } else {
-            List respond = res.body.split(",");
-            setState(() {
-              cartQuantity = respond[1];
-              widget.user.quantity = cartQuantity;
-            });
-            Toast.show("Success add to cart", context,
-                duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-          }
-          pr.hide();
-        }).catchError((err) {
-          print(err);
-          pr.hide();
-        });
-        pr.hide();
-      } else {
-        Toast.show("Out of ticket", context,
-            duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-      }
-    } catch (e) {
-      Toast.show("Failed add to cart", context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-    }
-  }
-
   void _loadCartQuantity() async {
     String urlLoadJobs = server + "/php/load_cartquantity.php";
     await http.post(urlLoadJobs, body: {
@@ -440,5 +286,27 @@ class _ConsultancyServicePageState extends State<ConsultancyServicePage> {
     }).catchError((err) {
       print(err);
     });
+  }
+
+  _getDetail(int index) async {
+    Consultant consultant = new Consultant(
+      prodid: consultantData[index]['prodid'],
+      name: consultantData[index]['name'],
+      price: consultantData[index]['price'],
+      type: consultantData[index]['type'],
+      state: consultantData[index]['state'],
+      latitude: consultantData[index]['latitude'],
+      longitude: consultantData[index]['longitude'],
+      contact: consultantData[index]['contact'],
+      address: consultantData[index]['address'],
+      quantity: consultantData[index]['quantity'],
+      website: consultantData[index]['website'],
+    );
+
+    await Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext context) =>
+                ConsultantDetail(user: widget.user, consultant: consultant)));
   }
 }

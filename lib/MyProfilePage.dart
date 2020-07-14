@@ -1,3 +1,4 @@
+import 'package:budget_tracker/Credit.dart';
 import 'package:budget_tracker/LoginPage.dart';
 import 'package:budget_tracker/MainPage.dart';
 import 'package:budget_tracker/RegisterPage.dart';
@@ -63,6 +64,7 @@ class _MyProfilePageState extends State<MyProfilePage>
     return WillPopScope(
       onWillPop: _onBackPressed,
       child: Scaffold(
+          resizeToAvoidBottomPadding: false,
           appBar: AppBar(
             title: Text('My Profile'),
             backgroundColor: secondaryColor,
@@ -137,7 +139,7 @@ class _MyProfilePageState extends State<MyProfilePage>
                           child: Card(
                             elevation: 10,
                             child: Container(
-                              padding: EdgeInsets.all(50),
+                              padding: EdgeInsets.fromLTRB(50, 20, 50, 20),
                               //color: Colors.black,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -195,6 +197,24 @@ class _MyProfilePageState extends State<MyProfilePage>
                                     height: 10,
                                   ),
                                   Text(
+                                    "Credit",
+                                    style: TextStyle(
+                                        fontSize: 14, color: Colors.grey),
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Text(
+                                    "RM " + widget.user.credit,
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
                                     "Date Registered",
                                     style: TextStyle(
                                         fontSize: 14, color: Colors.grey),
@@ -244,8 +264,8 @@ class _MyProfilePageState extends State<MyProfilePage>
                                   child: Text("REGISTER NEW ACCOUNT"),
                                 ),
                                 MaterialButton(
-                                  onPressed: null,
-                                  child: Text("BUY STORE CREDIT"),
+                                  onPressed: buyCredit,
+                                  child: Text("BUY CREDIT"),
                                 ),
                               ])),
                         )
@@ -671,5 +691,107 @@ class _MyProfilePageState extends State<MyProfilePage>
                   ],
                 )) ??
         false;
+  }
+
+  void buyCredit() {
+    if (widget.user.email == "guest@budgettracker.com") {
+      Toast.show("Please register to use this function", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
+    TextEditingController creditController = TextEditingController();
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(20.0))),
+              title: new Text(
+                "Buy Credit?",
+              ),
+              content: new TextField(
+                  controller: creditController,
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(
+                    labelText: 'Enter RM',
+                    icon: Icon(
+                      Icons.attach_money,
+                      color: Colors.black,
+                    ),
+                  )),
+              actions: <Widget>[
+                new FlatButton(
+                    child: new Text(
+                      "Yes",
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    onPressed: () =>
+                        _buyCredit(creditController.text.toString())),
+                new FlatButton(
+                  child: new Text(
+                    "No",
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                  ),
+                  onPressed: () => {Navigator.of(context).pop()},
+                ),
+              ]);
+        });
+  }
+
+  _buyCredit(String cr) {
+    print("RM " + cr);
+    if (cr.length <= 0) {
+      Toast.show("Please enter correct amount", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
+    showDialog(
+      context: context,
+      builder: (context) => new AlertDialog(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20.0))),
+        title: new Text(
+          'Buy credit RM ' + cr,
+        ),
+        content: new Text(
+          'Are you sure?',
+        ),
+        actions: <Widget>[
+          MaterialButton(
+              onPressed: () {
+                Navigator.of(context).pop(false);
+                Navigator.of(context).pop(false);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => CreditPage(
+                              user: widget.user,
+                              val: cr,
+                            )));
+              },
+              child: Text(
+                "Ok",
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+              )),
+          MaterialButton(
+              onPressed: () {
+                Navigator.of(context).pop(false);
+                Navigator.of(context).pop(false);
+              },
+              child: Text(
+                "Cancel",
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+              )),
+        ],
+      ),
+    );
   }
 }

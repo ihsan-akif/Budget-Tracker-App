@@ -1,24 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
-MERGED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-41:12
+MERGED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-41:12
+MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:google_api_availability] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-21:12
 MERGED from [:google_maps_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:geocoder] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [:shared_preferences] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences_web] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences_macos] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_macos\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:webview_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:location_permissions] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1e91a87c97603844f6df21a101374f9b\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
@@ -79,20 +80,40 @@ INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\a
 		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-41:12
 		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-35:12
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:1-41:12
 		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:10:5-66
+MERGED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:10:5-66
+MERGED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:10:5-66
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:10:22-64
 application
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:8:5-34:19
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:12:5-40:19
 MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-19:19
 MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-19:19
 MERGED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-20:19
 MERGED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-20:19
+MERGED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\1e91a87c97603844f6df21a101374f9b\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
@@ -122,65 +143,79 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ih
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\b6252bb7f30c7dceb20e97dfa6dfae00\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:10:9-39
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:14:9-39
 	android:largeHeap
 		ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-33
 	android:icon
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:15:9-43
 	android:theme
 		ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-59
 	android:usesCleartextTraffic
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:12:9-44
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:16:9-44
 	android:name
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:9:9-57
-activity#com.shababit.budget_tracker.MainActivity
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:13:9-24:20
-	android:launchMode
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:15:13-43
-	android:hardwareAccelerated
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:18:13-47
-	android:windowSoftInputMode
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:19:13-55
-	android:configChanges
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:17:13-163
-	android:theme
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:16:13-47
-	android:name
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:14:13-41
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:20:13-23:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:21:17-68
-	android:name
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:21:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:22:17-76
-	android:name
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:22:27-74
-activity#com.yalantis.ucrop.UCropActivity
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:25:9-28:63
-	android:screenOrientation
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:27:5-41
-	android:theme
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:28:5-61
-	android:name
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:26:5-52
-meta-data#flutterEmbedding
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:31:9-33:33
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:13:9-57
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:17:9-123
 	android:value
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:33:13-30
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:17:66-121
 	android:name
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:32:13-44
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:17:20-65
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:18:9-121
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:18:66-119
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:18:20-65
+activity#com.shababit.budget_tracker.MainActivity
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:19:9-30:20
+	android:launchMode
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:21:13-43
+	android:hardwareAccelerated
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:24:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:25:13-55
+	android:configChanges
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:23:13-163
+	android:theme
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:22:13-47
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:20:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:26:13-29:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:27:17-68
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:28:17-76
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:28:27-74
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:31:9-34:63
+	android:screenOrientation
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:33:5-41
+	android:theme
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:34:5-61
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:32:5-52
+meta-data#flutterEmbedding
+ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:37:9-39:33
+	android:value
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:39:13-30
+	android:name
+		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml:38:13-44
 uses-sdk
 INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
+MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_api_availability] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_api_availability] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:google_maps_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -191,6 +226,8 @@ MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ihsan\Documents\Flutter
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:geocoder] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:geocoder] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences_web] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -199,10 +236,10 @@ MERGED from [:shared_preferences_macos] C:\Users\ihsan\Documents\Flutter Project
 MERGED from [:shared_preferences_macos] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\shared_preferences_macos\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_cropper] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_cropper\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location_permissions] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location_permissions] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\5a39408fd27f4c537c4406ff95f3b64c\play-services-vision-19.0.0\AndroidManifest.xml:5:5-44
@@ -313,16 +350,6 @@ INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\a
 	android:minSdkVersion
 		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml:6:5-66
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
-	android:name
-		ADDED from C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\android\app\src\debug\AndroidManifest.xml:6:22-64
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
-	android:name
-		ADDED from [:geolocator] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.CAMERA
 ADDED from [:flutter_barcode_scanner] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-65
 	android:name
@@ -363,6 +390,14 @@ ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_trac
 		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
 	android:name
 		ADDED from [:image_picker] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] C:\Users\ihsan\Documents\Flutter Projects\budget_tracker\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
 	android:name
@@ -387,9 +422,3 @@ ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gr
 		ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:26:13-72
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\f81e9fffe318fdc5660099e12e35729e\play-services-base-17.2.1\AndroidManifest.xml:24:13-79
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\ihsan\.gradle\caches\transforms-2\files-2.1\dedb4f99a8b178feb536d0c600219311\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58

@@ -37,6 +37,7 @@ class _CartPageState extends State<CartPage> {
   Color secondaryColor = Color.fromRGBO(249, 178, 51, 1);
   Color backgroundColor = Color.fromRGBO(242, 242, 242, 1);
   Color blueishColor = Color.fromRGBO(0, 255, 255, 1);
+  bool _useCredit = false;
 
   @override
   void initState() {
@@ -69,13 +70,6 @@ class _CartPageState extends State<CartPage> {
         body: Container(
             child: Column(
           children: <Widget>[
-            // Text(
-            //   "Content of your Cart",
-            //   style: TextStyle(
-            //       color: primaryColor,
-            //       fontSize: 18,
-            //       fontWeight: FontWeight.bold),
-            // ),
             cartData == null
                 ? Flexible(
                     child: Container(
@@ -144,8 +138,7 @@ class _CartPageState extends State<CartPage> {
                                                     CrossAxisAlignment.start,
                                                 children: <Widget>[
                                                   Text(
-                                                    cartData[index]
-                                                        ['name'],
+                                                    cartData[index]['name'],
                                                     style: TextStyle(
                                                         fontWeight:
                                                             FontWeight.bold,
@@ -163,8 +156,7 @@ class _CartPageState extends State<CartPage> {
                                                   ),
                                                   Text(
                                                     "Type: " +
-                                                        cartData[index]
-                                                            ['type'],
+                                                        cartData[index]['type'],
                                                     style: TextStyle(
                                                         color: primaryColor),
                                                   ),
@@ -257,55 +249,121 @@ class _CartPageState extends State<CartPage> {
                                   ])));
                         })),
             Container(
-              color: secondaryColor,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+              //color: primaryColor,
+                //height: screenHeight / 3,
+                child: Card(
+                  color: primaryColor,
+              elevation: 5,
+              child: Column(
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(30, 10, 0, 0),
-                    child: Text(
-                      "Total",
-                      style: TextStyle(fontSize: 16),
-                    ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text("Payment",
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black)),
+                  SizedBox(height: 10),
+                  Container(
+                      padding: EdgeInsets.fromLTRB(50, 0, 50, 0),
+                      //color: Colors.red,
+                      child: Table(
+                          defaultColumnWidth: FlexColumnWidth(1.0),
+                          columnWidths: {
+                            0: FlexColumnWidth(7),
+                            1: FlexColumnWidth(3),
+                          },
+                          children: [
+                            TableRow(children: [
+                              TableCell(
+                                child: Container(
+                                    alignment: Alignment.centerLeft,
+                                    height: 20,
+                                    child: Text("Total Item Price ",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black))),
+                              ),
+                              TableCell(
+                                child: Container(
+                                  alignment: Alignment.centerLeft,
+                                  height: 20,
+                                  child: Text(
+                                      "RM" + _totalprice.toStringAsFixed(2) ??
+                                          "0.0",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 14,
+                                          color: Colors.black)),
+                                ),
+                              ),
+                            ]),
+                            TableRow(children: [
+                              TableCell(
+                                child: Container(
+                                    alignment: Alignment.centerLeft,
+                                    height: 20,
+                                    child: Text(
+                                        "Credit RM" + widget.user.credit,
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black))),
+                              ),
+                              TableCell(
+                                child: Container(
+                                  alignment: Alignment.centerLeft,
+                                  height: 20,
+                                  child: Checkbox(
+                                    value: _useCredit,
+                                    onChanged: (bool value) {
+                                      _onUseCredit(value);
+                                    },
+                                  ),
+                                ),
+                              ),
+                            ]),
+                            TableRow(children: [
+                              TableCell(
+                                child: Container(
+                                    alignment: Alignment.centerLeft,
+                                    height: 20,
+                                    child: Text("Total Amount ",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black))),
+                              ),
+                              TableCell(
+                                child: Container(
+                                  alignment: Alignment.centerLeft,
+                                  height: 20,
+                                  child: Text(
+                                      "RM" + amountpayable.toStringAsFixed(2) ??
+                                          "0.0",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black)),
+                                ),
+                              ),
+                            ]),
+                          ])),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  MaterialButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0)),
+                    minWidth: 200,
+                    height: 40,
+                    child: Text('CHECKOUT'),
+                    color: secondaryColor,
+                    textColor: Colors.black,
+                    elevation: 10,
+                    onPressed: makePaymentDialog,
                   ),
                 ],
               ),
-            ),
-            Container(
-              color: secondaryColor,
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  //crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.all(5.0),
-                      child:
-                          Text("RM" + _totalprice.toStringAsFixed(2) ?? "0.0",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                              )),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
-                      child: MaterialButton(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20.0)),
-                        minWidth: 200,
-                        height: 40,
-                        child: Text('CHECKOUT'),
-                        color: primaryColor,
-                        textColor: Colors.black,
-                        elevation: 10,
-                        onPressed: makePayment,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            ))
           ],
         )));
   }
@@ -341,8 +399,7 @@ class _CartPageState extends State<CartPage> {
           // _weight = double.parse(cartData[i]['weight']) *
           //         int.parse(cartData[i]['cquantity']) +
           //     _weight;
-          _totalprice =
-              double.parse(cartData[i]['yourprice']) + _totalprice;
+          _totalprice = double.parse(cartData[i]['yourprice']) + _totalprice;
         }
         // _weight = _weight / 1000;
         amountpayable = _totalprice;
@@ -409,13 +466,50 @@ class _CartPageState extends State<CartPage> {
     );
   }
 
+  void makePaymentDialog() {
+    showDialog(
+      context: context,
+      builder: (context) => new AlertDialog(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20.0))),
+        title: new Text(
+          'Proceed with payment?',
+        ),
+        content: new Text(
+          'Are you sure?',
+        ),
+        actions: <Widget>[
+          MaterialButton(
+              onPressed: () {
+                Navigator.of(context).pop(false);
+                makePayment();
+              },
+              child: Text(
+                "Ok",
+              )),
+          MaterialButton(
+              onPressed: () {
+                Navigator.of(context).pop(false);
+              },
+              child: Text(
+                "Cancel",
+              )),
+        ],
+      ),
+    );
+  }
+
   Future<void> makePayment() async {
+    if (amountpayable < 0) {
+      double newamount = amountpayable * -1;
+      await _payusingcredit(newamount);
+      _loadCart();
+      return;
+    }
     var now = new DateTime.now();
     var formatter = new DateFormat('ddMMyyyy-');
-    String orderid = widget.user.email +
-        "-" +
-        formatter.format(now) +
-        randomAlphaNumeric(6);
+    String orderid =
+        widget.user.email + "-" + formatter.format(now) + randomAlphaNumeric(6);
     print(orderid);
     await Navigator.push(
         context,
@@ -511,5 +605,63 @@ class _CartPageState extends State<CartPage> {
         ],
       ),
     );
+  }
+
+  void _onUseCredit(bool newValue) => setState(() {
+        _useCredit = newValue;
+        if (_useCredit) {
+          _updatePayment();
+        } else {
+          _updatePayment();
+        }
+      });
+
+  void _updatePayment() {
+    _totalprice = 0.0;
+    amountpayable = 0.0;
+    setState(() {
+      for (int i = 0; i < cartData.length; i++) {
+        _totalprice = double.parse(cartData[i]['yourprice']) + _totalprice;
+      }
+      if (_useCredit) {
+        amountpayable = _totalprice - double.parse(widget.user.credit);
+      } else {
+        amountpayable = _totalprice;
+      }
+      print(_totalprice);
+    });
+  }
+
+  Future<void> _payusingcredit(double newamount) async {
+    //insert carthistory
+    //remove cart content
+    //update product quantity
+    //update credit in user
+    ProgressDialog pr = new ProgressDialog(context,
+        type: ProgressDialogType.Normal, isDismissible: true);
+    pr.style(message: "Updating cart...");
+    pr.show();
+    String urlPayment = server + "/php/payment_credit.php";
+    await http.post(urlPayment, body: {
+      "userid": widget.user.email,
+      "amount": _totalprice.toStringAsFixed(2),
+      "orderid": generateOrderid(),
+      "newcr": newamount.toStringAsFixed(2)
+    }).then((res) {
+      print(res.body);
+      pr.dismiss();
+    }).catchError((err) {
+      print(err);
+    });
+  }
+
+  String generateOrderid() {
+    var now = new DateTime.now();
+    var formatter = new DateFormat('ddMMyyyy-');
+    String orderid = widget.user.email.substring(1, 4) +
+        "-" +
+        formatter.format(now) +
+        randomAlphaNumeric(6);
+    return orderid;
   }
 }

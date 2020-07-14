@@ -249,7 +249,7 @@ class _AddIncomePageState extends State<AddIncomePage> {
                                   color: secondaryColor,
                                   textColor: Colors.black,
                                   elevation: 5,
-                                  onPressed: _insertNewExpense,
+                                  onPressed: _insertNewIncome,
                                 ),
                                 MaterialButton(
                                   shape: RoundedRectangleBorder(
@@ -318,7 +318,7 @@ class _AddIncomePageState extends State<AddIncomePage> {
     }
   }
 
-  void _insertNewExpense() {
+  void _insertNewIncome() {
     if (_image == null) {
       Toast.show("Please take income receipt", context,
           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
@@ -361,7 +361,7 @@ class _AddIncomePageState extends State<AddIncomePage> {
               ),
               onPressed: () {
                 Navigator.of(context).pop();
-                insertExpense();
+                insertIncome();
               },
             ),
             new FlatButton(
@@ -378,7 +378,7 @@ class _AddIncomePageState extends State<AddIncomePage> {
     );
   }
 
-  insertExpense() {
+  insertIncome() {
     double total = double.parse(totalEditingController.text);
     var now = new DateTime.now();
     var formatter = new DateFormat('ddMMyyyy-');
