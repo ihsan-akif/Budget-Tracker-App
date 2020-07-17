@@ -89,6 +89,11 @@ class _MainPageState extends State<MainPage> {
                         duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
                     return;
                   }
+                  if (widget.user.email == "admin@budgettracker.com") {
+                    Toast.show("Admin Mode!", context,
+                        duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+                    return;
+                  }
                   if (widget.user.quantity == "0") {
                     Toast.show("Cart empty", context,
                         duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
@@ -305,6 +310,11 @@ class _MainPageState extends State<MainPage> {
                     duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
                 return;
               }
+              if (widget.user.email == "admin@budgettracker.com") {
+                Toast.show("Admin Mode!", context,
+                    duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+                return;
+              }
               if (widget.user.quantity == "0") {
                 Toast.show("Cart empty", context,
                     duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
@@ -330,6 +340,11 @@ class _MainPageState extends State<MainPage> {
             onTap: () {
               if (widget.user.email == "guest@budgettracker.com") {
                 Toast.show("Please register to use this function", context,
+                    duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+                return;
+              }
+              if (widget.user.email == "admin@budgettracker.com") {
+                Toast.show("Admin Mode!", context,
                     duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
                 return;
               }

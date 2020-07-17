@@ -462,6 +462,11 @@ class _DashboardPageState extends State<DashboardPage> {
           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
       return;
     }
+    if (widget.user.email == "admin@budgettracker.com") {
+      Toast.show("Admin Mode!", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
     if (userData == null) {
       Toast.show("Please add income first!", context,
           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
@@ -479,6 +484,11 @@ class _DashboardPageState extends State<DashboardPage> {
   Future<void> addNewIncome() async {
     if (widget.user.email == "guest@budgettracker.com") {
       Toast.show("Please register to use this function", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
+    if (widget.user.email == "admin@budgettracker.com") {
+      Toast.show("Admin Mode!", context,
           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
       return;
     }

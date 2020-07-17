@@ -276,11 +276,11 @@ class _ConsultantDetailState extends State<ConsultantDetail> {
           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
       return;
     }
-    // if (widget.user.email == "admin@grocery.com") {
-    //   Toast.show("Admin Mode!!!", context,
-    //       duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-    //   return;
-    // }
+    if (widget.user.email == "admin@budgettracker.com") {
+      Toast.show("Admin Mode!", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
     quantity = 1;
     showDialog(
         context: context,

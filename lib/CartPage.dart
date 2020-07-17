@@ -516,7 +516,7 @@ class _CartPageState extends State<CartPage> {
         MaterialPageRoute(
             builder: (BuildContext context) => PaymentScreen(
                   user: widget.user,
-                  val: _totalprice.toStringAsFixed(2),
+                  val: amountpayable.toStringAsFixed(2),
                   orderid: orderid,
                 )));
     _loadCart();
@@ -628,7 +628,8 @@ class _CartPageState extends State<CartPage> {
       } else {
         amountpayable = _totalprice;
       }
-      print(_totalprice);
+      print("Total Item Price: $_totalprice");
+      print("Total Amount: $amountpayable");
     });
   }
 

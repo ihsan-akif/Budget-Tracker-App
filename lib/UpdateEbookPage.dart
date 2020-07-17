@@ -63,6 +63,7 @@ class _UpdateEbookPageState extends State<UpdateEbookPage> {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
+        backgroundColor: secondaryColor,
         title: Text('Update E-Book'),
       ),
       body: Container(
@@ -315,7 +316,7 @@ class _UpdateEbookPageState extends State<UpdateEbookPage> {
                                             focusNode: focus3,
                                             onFieldSubmitted: (v) {
                                               FocusScope.of(context)
-                                                  .requestFocus(focus3);
+                                                  .requestFocus(focus4);
                                             },
                                             decoration: new InputDecoration(
                                               border: new OutlineInputBorder(
@@ -386,6 +387,31 @@ class _UpdateEbookPageState extends State<UpdateEbookPage> {
   }
 
   updateEbookDialog() {
+    if (nameEditingController.text.length <= 0) {
+      Toast.show("Please enter the E-Book title", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
+    if (priceEditingController.text.length <= 0) {
+      Toast.show("Please enter price!", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
+    if (authorEditingController.text.length <= 0) {
+      Toast.show("Please enter the E-Book author", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
+    if (publisherEditingController.text.length <= 0) {
+      Toast.show("Please enter the E-Book publisher", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
+    if (quantityEditingController.text.length <= 0) {
+      Toast.show("Please enter quantity!", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -429,33 +455,8 @@ class _UpdateEbookPageState extends State<UpdateEbookPage> {
   }
 
   updateEbook() {
-    if (nameEditingController.text.length < 4) {
-      Toast.show("Please enter E-Book name", context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-      return;
-    }
-    if (quantityEditingController.text.length < 1) {
-      Toast.show("Please enter E-Book quantity", context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-      return;
-    }
-    if (priceEditingController.text.length < 1) {
-      Toast.show("Please enter E-Book price", context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-      return;
-    }
-    if (publisherEditingController.text.length < 1) {
-      Toast.show("Please enter E-Book publisher", context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-      return;
-    }
-    if (authorEditingController.text.length < 1) {
-      Toast.show("Please enter author name", context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-      return;
-    }
-
     double price = double.parse(priceEditingController.text);
+    int quantity = int.parse(quantityEditingController.text);
 
     ProgressDialog pr = new ProgressDialog(context,
         type: ProgressDialogType.Normal, isDismissible: false);
@@ -468,7 +469,7 @@ class _UpdateEbookPageState extends State<UpdateEbookPage> {
       http.post(server + "/php/update_ebook.php", body: {
         "prodid": widget.ebook.prodid,
         "name": nameEditingController.text,
-        "quantity": quantityEditingController.text,
+        "quantity": quantity.toString(),
         "price": price.toStringAsFixed(2),
         "publisher": publisherEditingController.text,
         "author": authorEditingController,
@@ -492,7 +493,7 @@ class _UpdateEbookPageState extends State<UpdateEbookPage> {
       http.post(server + "/php/update_ebook.php", body: {
         "prodid": widget.ebook.prodid,
         "name": nameEditingController.text,
-        "quantity": quantityEditingController.text,
+        "quantity": quantity.toString(),
         "price": price.toStringAsFixed(2),
         "publisher": publisherEditingController.text,
         "author": authorEditingController.text,

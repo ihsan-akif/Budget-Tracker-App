@@ -285,6 +285,11 @@ class _MyProfilePageState extends State<MyProfilePage>
           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
       return;
     }
+    if (widget.user.email == "admin@budgettracker.com") {
+      Toast.show("Admin Mode!", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
     File _image = await ImagePicker.pickImage(
         source: ImageSource.camera, maxHeight: 400, maxWidth: 300);
     //print(_image.lengthSync());
@@ -696,6 +701,11 @@ class _MyProfilePageState extends State<MyProfilePage>
   void buyCredit() {
     if (widget.user.email == "guest@budgettracker.com") {
       Toast.show("Please register to use this function", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
+    if (widget.user.email == "admin@budgettracker.com") {
+      Toast.show("Admin Mode!", context,
           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
       return;
     }

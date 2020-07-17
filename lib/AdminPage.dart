@@ -1,5 +1,6 @@
 import 'dart:convert';
-
+import 'package:budget_tracker/Consultant.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:budget_tracker/Ebook.dart';
 import 'package:budget_tracker/MainPage.dart';
 import 'package:budget_tracker/UpdateEbookPage.dart';
@@ -11,6 +12,9 @@ import 'package:http/http.dart' as http;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:progress_dialog/progress_dialog.dart';
 import 'package:toast/toast.dart';
+import 'package:budget_tracker/AddEbookPage.dart';
+import 'package:budget_tracker/AddConsultantPage.dart';
+import 'package:budget_tracker/UpdateConsultantPage.dart';
 
 void main() => runApp(AdminPage());
 
@@ -317,6 +321,22 @@ class _AdminPageState extends State<AdminPage> {
                 ])
               ],
             ),
+            floatingActionButton: SpeedDial(
+              animatedIcon: AnimatedIcons.add_event,
+              backgroundColor: primaryColor,
+              children: [
+                SpeedDialChild(
+                    child: Icon(MdiIcons.bookPlus),
+                    label: "Add New E-Book",
+                    backgroundColor: primaryColor,
+                    onTap: addNewEbook),
+                SpeedDialChild(
+                    child: Icon(MdiIcons.accountPlus),
+                    label: "Add New Consultant",
+                    backgroundColor: primaryColor, //_changeLocality()
+                    onTap: addNewConsultant),
+              ],
+            ),
           ),
         ),
       ),
@@ -504,9 +524,8 @@ class _AdminPageState extends State<AdminPage> {
         ),
         PopupMenuItem(
           child: GestureDetector(
-              onTap: null,
-              // onTap: () =>
-              //     {Navigator.of(context).pop(), _deleteProductDialog(index)},
+              onTap: () =>
+                  {Navigator.of(context).pop(), _deleteCatalogueDialog(index)},
               child: deleteCatalogueType(index)),
         ),
       ],
@@ -581,6 +600,27 @@ class _AdminPageState extends State<AdminPage> {
                     ebook: ebook,
                   )));
     }
+    else{
+      Consultant consultant = new Consultant(
+      prodid: ebookData[index]['prodid'],
+      name: ebookData[index]['name'],
+      price: ebookData[index]['price'],
+      type: ebookData[index]['type'],
+      state: ebookData[index]['state'],
+      latitude: ebookData[index]['latitude'],
+      longitude: ebookData[index]['longitude'],
+      contact: ebookData[index]['contact'],
+      address: ebookData[index]['address'],
+      quantity: ebookData[index]['quantity'],
+      website: ebookData[index]['website'],
+    );
+
+    await Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext context) =>
+                UpdateConsultantPage(consultant: consultant)));
+    }
 
     _loadEbook();
   }
@@ -629,6 +669,89 @@ class _AdminPageState extends State<AdminPage> {
   }
 
   void _deleteEbook(int index) {
+    ProgressDialog pr = new ProgressDialog(context,
+        type: ProgressDialogType.Normal, isDismissible: false);
+    pr.style(message: "Deleting " + ebookData[index]['name'] + "...");
+    pr.show();
+    http.post(server + "/php/delete_catalogue.php", body: {
+      "prodid": ebookData[index]['prodid'],
+    }).then((res) {
+      print(res.body);
+      pr.hide();
+      if (res.body == "success") {
+        Toast.show("Delete success", context,
+            duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+        _loadEbook();
+        //Navigator.of(context).pop();
+        pr.hide();
+      } else {
+        Toast.show("Delete failed", context,
+            duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      }
+    }).catchError((err) {
+      print(err);
+      pr.hide();
+    });
+  }
+
+  Future<void> addNewEbook() async {
+    await Navigator.push(context,
+        MaterialPageRoute(builder: (BuildContext context) => AddEbookPage()));
+    _loadEbook();
+  }
+
+  Future<void> addNewConsultant() async {
+    await Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext context) => AddConsultantPage()));
+    _loadEbook();
+  }
+
+  void _deleteCatalogueDialog(int index) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20.0))),
+          title: new Text(
+            "Delete " + ebookData[index]['name'] + " ?",
+          ),
+          content: new Text("Are you sure?"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text(
+                "Yes",
+                style: TextStyle(
+                  color: secondaryColor,
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).pop();
+                _deleteCatalogue(index);
+              },
+            ),
+            new FlatButton(
+              child: new Text(
+                "No",
+                style: TextStyle(
+                  color: secondaryColor,
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _deleteCatalogue(int index) {
     ProgressDialog pr = new ProgressDialog(context,
         type: ProgressDialogType.Normal, isDismissible: false);
     pr.style(message: "Deleting " + ebookData[index]['name'] + "...");
