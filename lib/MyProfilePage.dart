@@ -35,6 +35,8 @@ class _MyProfilePageState extends State<MyProfilePage>
     }
   }
 
+  final GlobalKey<ScaffoldState> _scaffold = new GlobalKey<ScaffoldState>();
+  GlobalKey<RefreshIndicatorState> refreshKey;
   Color primaryColor = Color.fromRGBO(255, 82, 48, 1);
   Color secondaryColor = Color.fromRGBO(249, 178, 51, 1);
   Color backgroundColor = Color.fromRGBO(242, 242, 242, 1);
@@ -49,6 +51,7 @@ class _MyProfilePageState extends State<MyProfilePage>
   void initState() {
     super.initState();
     print("profile screen");
+    _loadCredit();
     // DefaultCacheManager manager = new DefaultCacheManager();
     // manager.emptyCache();
     //WidgetsBinding.instance.addPostFrameCallback((_) => _loadData());
@@ -62,8 +65,9 @@ class _MyProfilePageState extends State<MyProfilePage>
     parsedDate = DateTime.parse(widget.user.datereg);
 
     return WillPopScope(
-      onWillPop: _onBackPressed,
-      child: Scaffold(
+        onWillPop: _onBackPressed,
+        child: Scaffold(
+          key: _scaffold,
           resizeToAvoidBottomPadding: false,
           appBar: AppBar(
             title: Text('My Profile'),
@@ -82,201 +86,232 @@ class _MyProfilePageState extends State<MyProfilePage>
               },
             ),
           ),
-          body: Container(
-            height: double.infinity,
-            width: double.infinity,
-            color: secondaryColor,
-            child: Center(
-              child: Column(
-                children: <Widget>[
-                  GestureDetector(
-                    onTap: _takePicture,
-                    child: Container(
-                        height: screenHeight / 4,
-                        width: screenWidth / 2.5,
-                        child: ClipOval(
-                          child: CachedNetworkImage(
-                            fit: BoxFit.cover,
-                            imageUrl: server +
-                                "/profile_images/${widget.user.email}.jpg?",
-                            placeholder: (context, url) => new SizedBox(
-                                height: 10.0,
-                                width: 10.0,
-                                child: CircularProgressIndicator()),
-                            errorWidget: (context, url, error) =>
-                                new Icon(MdiIcons.cameraIris, size: 64.0),
-                          ),
-                        )),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text(widget.user.name,
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                  Container(
-                    decoration: new BoxDecoration(color: secondaryColor),
-                    child: TabBar(
-                      controller: _controller,
-                      tabs: [
-                        new Tab(
-                          text: 'Info',
+          body: RefreshIndicator(
+              key: refreshKey,
+              color: Colors.black,
+              onRefresh: () async {
+                await refreshList();
+              },
+              child: Container(
+                height: double.infinity,
+                width: double.infinity,
+                color: secondaryColor,
+                child: Center(
+                  child: Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: _takePicture,
+                        child: Container(
+                            height: screenHeight / 4,
+                            width: screenWidth / 2.5,
+                            child: ClipOval(
+                              child: CachedNetworkImage(
+                                fit: BoxFit.cover,
+                                imageUrl: server +
+                                    "/profile_images/${widget.user.email}.jpg?",
+                                placeholder: (context, url) => new SizedBox(
+                                    height: 10.0,
+                                    width: 10.0,
+                                    child: CircularProgressIndicator()),
+                                errorWidget: (context, url, error) =>
+                                    new Icon(MdiIcons.cameraIris, size: 64.0),
+                              ),
+                            )),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(widget.user.name,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18)),
+                      Container(
+                        decoration: new BoxDecoration(color: secondaryColor),
+                        child: TabBar(
+                          controller: _controller,
+                          tabs: [
+                            new Tab(
+                              text: 'Info',
+                            ),
+                            new Tab(
+                              text: 'Settings',
+                            ),
+                          ],
                         ),
-                        new Tab(
-                          text: 'Settings',
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: screenHeight / 1.94,
-                    color: backgroundColor,
-                    child: new TabBarView(
-                      controller: _controller,
-                      children: <Widget>[
-                        Container(
-                          padding: EdgeInsets.all(20),
-                          child: Card(
-                            elevation: 10,
-                            child: Container(
-                              padding: EdgeInsets.fromLTRB(50, 20, 50, 20),
-                              //color: Colors.black,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Text(
-                                    "Name",
-                                    style: TextStyle(
-                                        fontSize: 14, color: Colors.grey),
+                      ),
+                      Container(
+                        height: screenHeight / 1.94,
+                        color: backgroundColor,
+                        child: new TabBarView(
+                          controller: _controller,
+                          children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.all(20),
+                              child: Card(
+                                elevation: 10,
+                                child: Container(
+                                  padding: EdgeInsets.fromLTRB(50, 20, 50, 20),
+                                  //color: Colors.black,
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        "Name",
+                                        style: TextStyle(
+                                            fontSize: 14, color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        widget.user.name,
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text(
+                                        "Email",
+                                        style: TextStyle(
+                                            fontSize: 14, color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        widget.user.email,
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text(
+                                        "Phone",
+                                        style: TextStyle(
+                                            fontSize: 14, color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        widget.user.phoneNum,
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text(
+                                        "Credit",
+                                        style: TextStyle(
+                                            fontSize: 14, color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        "RM " + widget.user.credit,
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text(
+                                        "Date Registered",
+                                        style: TextStyle(
+                                            fontSize: 14, color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        f.format(parsedDate),
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    widget.user.name,
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(
-                                    "Email",
-                                    style: TextStyle(
-                                        fontSize: 14, color: Colors.grey),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    widget.user.email,
-                                    style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(
-                                    "Phone",
-                                    style: TextStyle(
-                                        fontSize: 14, color: Colors.grey),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    widget.user.phoneNum,
-                                    style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(
-                                    "Credit",
-                                    style: TextStyle(
-                                        fontSize: 14, color: Colors.grey),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    "RM " + widget.user.credit,
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(
-                                    "Date Registered",
-                                    style: TextStyle(
-                                        fontSize: 14, color: Colors.grey),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    f.format(parsedDate),
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ],
+                                ),
                               ),
                             ),
-                          ),
-                        ),
-                        Container(
-                          color: backgroundColor,
-                          child: Expanded(
+                            Container(
+                              color: backgroundColor,
+                              child: Expanded(
 
-                              //color: Colors.red,
-                              child: ListView(
-                                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
-                                  shrinkWrap: true,
-                                  children: <Widget>[
-                                MaterialButton(
-                                  onPressed: changeName,
-                                  child: Text("CHANGE YOUR NAME"),
-                                ),
-                                MaterialButton(
-                                  onPressed: changePassword,
-                                  child: Text("CHANGE YOUR PASSWORD"),
-                                ),
-                                MaterialButton(
-                                  onPressed: changePhone,
-                                  child: Text("CHANGE YOUR PHONE"),
-                                ),
-                                MaterialButton(
-                                  onPressed: _gotologinPage,
-                                  child: Text("GO LOGIN SCREEN"),
-                                ),
-                                MaterialButton(
-                                  onPressed: _registerAccount,
-                                  child: Text("REGISTER NEW ACCOUNT"),
-                                ),
-                                MaterialButton(
-                                  onPressed: buyCredit,
-                                  child: Text("BUY CREDIT"),
-                                ),
-                              ])),
-                        )
-                      ],
-                    ),
+                                  //color: Colors.red,
+                                  child: ListView(
+                                      padding:
+                                          EdgeInsets.fromLTRB(10, 5, 10, 5),
+                                      shrinkWrap: true,
+                                      children: <Widget>[
+                                    MaterialButton(
+                                      onPressed: changeName,
+                                      child: Text("CHANGE YOUR NAME"),
+                                    ),
+                                    MaterialButton(
+                                      onPressed: changePassword,
+                                      child: Text("CHANGE YOUR PASSWORD"),
+                                    ),
+                                    MaterialButton(
+                                      onPressed: changePhone,
+                                      child: Text("CHANGE YOUR PHONE"),
+                                    ),
+                                    MaterialButton(
+                                      onPressed: _gotologinPage,
+                                      child: Text("GO LOGIN SCREEN"),
+                                    ),
+                                    MaterialButton(
+                                      onPressed: _registerAccount,
+                                      child: Text("REGISTER NEW ACCOUNT"),
+                                    ),
+                                    MaterialButton(
+                                      onPressed: buyCredit,
+                                      child: Text("BUY CREDIT"),
+                                    ),
+                                  ])),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-            ),
-          )),
-    );
+                ),
+              )),
+        ));
+  }
+
+  Future<Null> refreshList() async {
+    await Future.delayed(Duration(seconds: 2));
+    _loadCredit();
+    return null;
+  }
+
+  void _loadCredit() async {
+    String urlLoadJobs = server + "/php/load_credit.php";
+    await http.post(urlLoadJobs, body: {
+      "email": widget.user.email,
+    }).then((res) {
+      if (res.body == "No Credit") {
+        setState(() {});
+      } else {
+        setState(() {
+          widget.user.credit = res.body;
+        });
+      }
+    }).catchError((err) {
+      print(err);
+    });
   }
 
   void _takePicture() async {
@@ -326,11 +361,11 @@ class _MyProfilePageState extends State<MyProfilePage>
           duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
       return;
     }
-    // if (widget.user.email == "admin@grocery.com") {
-    //   Toast.show("Admin Mode!!!", context,
-    //       duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
-    //   return;
-    // }
+    if (widget.user.email == "admin@budgettracker.com") {
+      Toast.show("Admin Mode!", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      return;
+    }
     TextEditingController nameController = TextEditingController();
     showDialog(
         context: context,
